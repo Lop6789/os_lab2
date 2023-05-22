@@ -19,6 +19,7 @@ void sighandler(int signum){
 	}
 	if (waitpid(child_pid, NULL, WNOHANG) == 0) {
 		kill(child_pid, SIGTERM);
+		printf("Terminated!\n");
 	}
 }
 

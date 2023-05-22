@@ -99,7 +99,8 @@ int main(){
             argc++;
 
             execvp(argv[0], argv);
-
+            
+            //free agrv?
             perror("Something went wrong ...");
 		    exit(EXIT_FAILURE);
         }
